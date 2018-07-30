@@ -6,7 +6,7 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
-        return cache.addAll(['/main.js']);
+        return cache.addAll(['/test_repo/main.js']);
       })
   );
 });
